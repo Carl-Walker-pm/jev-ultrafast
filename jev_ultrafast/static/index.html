@@ -31,6 +31,7 @@
         <div class="task-label">
           <label for="goal">Give it a task</label
           ><select id="scenario" name="scenario" aria-label="Demo scenario">
+            <option value="custom">Custom URL · real web</option>
             <option value="flights">Google Flights · real web</option>
             <option value="travel">Travel planner · fixture</option>
             <option value="research">Reading room · fixture</option>
@@ -43,6 +44,10 @@ Find one-way flights from Zurich to London on September 20, 2026, for one adult 
             Start demo <span>↗</span>
           </button>
         </div>
+        <label class="url-field" for="url">
+          <span>Open this URL</span>
+          <input id="url" name="url" type="url" value="https://wikipedia.org" placeholder="https://example.com" />
+        </label>
       </form>
       <div class="toolbar">
         <div class="status">
